@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid, Paper, Button } from "@mui/material";
+import { Typography, Box, Grid2, Paper, Button } from "@mui/material";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import BookIcon from "@mui/icons-material/Book";
 import HistoryIcon from "@mui/icons-material/History";
@@ -7,7 +7,6 @@ import HistoryIcon from "@mui/icons-material/History";
 function Library() {
   return (
     <Box sx={{ padding: 4 }}>
-      {/* Page Title */}
       <Typography variant="h3" sx={{ fontWeight: 'bold', marginBottom: 2, textAlign: 'center' }}>
         Welcome to Our Library
       </Typography>
@@ -15,10 +14,8 @@ function Library() {
         Your personal space for saved content, favorite books, and browsing history.
       </Typography>
 
-      {/* Sections of the Library */}
-      <Grid container spacing={4}>
-        {/* Saved Articles Section */}
-        <Grid item xs={12} sm={4}>
+      <Grid2 container spacing={4}>
+        <Grid2 item xs={12} sm={4}>
           <Paper elevation={3} sx={{ padding: 3, textAlign: 'center' }}>
             <BookmarkIcon sx={{ fontSize: 40, color: '#1976d2' }} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', marginTop: 1 }}>
@@ -31,10 +28,9 @@ function Library() {
               View Saved Articles
             </Button>
           </Paper>
-        </Grid>
+        </Grid2>
 
-        {/* Books Section */}
-        <Grid item xs={12} sm={4}>
+        <Grid2 item xs={12} sm={4}>
           <Paper elevation={3} sx={{ padding: 3, textAlign: 'center' }}>
             <BookIcon sx={{ fontSize: 40, color: '#1976d2' }} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', marginTop: 1 }}>
@@ -47,10 +43,9 @@ function Library() {
               Explore Books
             </Button>
           </Paper>
-        </Grid>
+        </Grid2>
 
-        {/* Recent History Section */}
-        <Grid item xs={12} sm={4}>
+        <Grid2 item xs={12} sm={4}>
           <Paper elevation={3} sx={{ padding: 3, textAlign: 'center' }}>
             <HistoryIcon sx={{ fontSize: 40, color: '#1976d2' }} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', marginTop: 1 }}>
@@ -63,10 +58,9 @@ function Library() {
               View History
             </Button>
           </Paper>
-        </Grid>
-      </Grid>
+        </Grid2>
+      </Grid2>
 
-      {/* CTA Section */}
       <Box sx={{ textAlign: 'center', marginY: 6 }}>
         <Typography variant="h5" sx={{ marginBottom: 2, fontWeight: 'bold' }}>
           Stay Organized, Stay Informed

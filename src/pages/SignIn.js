@@ -5,21 +5,18 @@ function SignIn() {
   return (
     <Box
       sx={{
-        minHeight: "100vh", // Full viewport height
+        minHeight: "100vh", 
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#f5f5f5", // Light background color
+        backgroundColor: "#f5f5f5", 
         padding: 2,
       }}
     >
       <Paper elevation={6} sx={{ padding: 4, maxWidth: 400, width: "100%", borderRadius: 4 }}>
-        {/* Page Title */}
         <Typography variant="h4" sx={{ textAlign: "center", fontWeight: "bold", mb: 3 }}>
           Sign In
-        </Typography>
-
-        {/* Email Input */}
+        </Typography>     
         <TextField
           fullWidth
           label="Email"
@@ -28,8 +25,6 @@ function SignIn() {
           type="email"
           sx={{ mb: 2 }}
         />
-
-        {/* Password Input */}
         <TextField
           fullWidth
           label="Password"
@@ -38,8 +33,6 @@ function SignIn() {
           type="password"
           sx={{ mb: 3 }}
         />
-
-        {/* Sign In Button */}
         <Button
           fullWidth
           variant="contained"
@@ -52,8 +45,6 @@ function SignIn() {
         >
           Sign In
         </Button>
-
-        {/* Extra Links: Forgot Password, Sign Up */}
         <Box sx={{ mt: 2, textAlign: "center" }}>
           <Typography variant="body2" sx={{ color: "text.secondary", mb: 1 }}>
             Forgot your password? <a href="#" style={{ color: "#1976d2", textDecoration: "none" }}>Reset here</a>

@@ -22,7 +22,6 @@ function Navbar({ activePage }) {
     },
   };
 
-  // Function to render the appropriate navbar items based on the active page
   const renderNavbarItems = () => {
     switch (activePage) {
       case "Discovery":
@@ -64,9 +63,8 @@ function Navbar({ activePage }) {
     }
   };
 
-  // Exclude the Navbar for the Home page
   if (activePage === "Home" || activePage === "Sign In") {
-    return null; // Do not render the navbar if it's the Home page
+    return null; 
   }
 
   return (

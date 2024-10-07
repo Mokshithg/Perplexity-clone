@@ -45,7 +45,6 @@ function Home() {
         </Grid2>
       </Grid2>
 
-      {/* CTA Section */}
       <Box sx={{ textAlign: 'center', marginY: 8 }}>
         <Typography variant="h5" sx={{ marginBottom: 2, fontWeight: 'bold' }}>
           Ready to Transform Your Life?
